@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .popup {
+            width: 300px;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .popup-header {
+            background: #0078d4;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .popup-content {
+            padding: 20px;
+            color: #333;
+        }
+
+        .popup button {
+            background: #0078d4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="popup-header">Error</div>
+        <div class="popup-content">
+            An unexpected error has occurred.
+        </div>
+        <button onclick="goToLoading()">OK</button>
+    </div>
+
+    <script>
+        function goToLoading() {
+            window.location.href = "loading.html"; // Redireciona para a página "loading.html"
+        }
+    </script>
+</body>
+</html>
